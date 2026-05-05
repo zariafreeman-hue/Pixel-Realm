@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pixel Realm | Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <div class="top-bar">Contact Pixel Realm</div>
+
+    <div class="navbar">
+        <div class="logo">
+            <img src="img/pixel-realm-banner.png" alt="Pixel Realm logo">
+            <h1>Pixel <span>Realm</span></h1>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="forums.html">Forums</a>
+            <a href="videos.html">Videos</a>
+            <a href="store.html">Store</a>
+            <a href="news.html">News</a>
+            <a href="about.html">About</a>
+            <a class="active" href="contact.html">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <h2 class="section-title">Contact Us</h2>
+
+    <form onsubmit="sendMessage(); return false;">
+        <label for="name">Name</label>
+        <input type="text" id="name" required>
+
+        <label for="contactEmail">Email</label>
+        <input type="email" id="contactEmail" required>
+
+        <label for="reason">Reason for Contact</label>
+        <select id="reason">
+            <option>Forum Question</option>
+            <option>Store Question</option>
+            <option>Technical Support</option>
+            <option>General Feedback</option>
+        </select>
+
+        <label for="message">Message</label>
+        <textarea id="message" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+</main>
+
+<footer>
+    <p>&copy; 2026 Pixel Realm. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

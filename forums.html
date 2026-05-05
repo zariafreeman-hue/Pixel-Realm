@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pixel Realm | Forums</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <div class="top-bar">Forums — Start a Discussion</div>
+
+    <div class="navbar">
+        <div class="logo">
+            <img src="img/pixel-realm-banner.png" alt="Pixel Realm logo">
+            <h1>Pixel <span>Realm</span></h1>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a class="active" href="forums.html">Forums</a>
+            <a href="videos.html">Videos</a>
+            <a href="store.html">Store</a>
+            <a href="news.html">News</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <h2 class="section-title">Explore Forum Categories</h2>
+
+    <div class="grid">
+        <a href="cod-forum.html" class="card forum-card">
+            <img src="img/cod.png" alt="Call of Duty forum">
+            <div class="card-content">
+                <h3>Call of Duty Forum</h3>
+                <p>Explore loadouts, maps, zombies, ranked play, and multiplayer tips.</p>
+            </div>
+        </a>
+
+        <a href="fortnite-forum.html" class="card forum-card">
+            <img src="img/fortnite.png" alt="Fortnite forum">
+            <div class="card-content">
+                <h3>Fortnite Forum</h3>
+                <p>Talk about skins, seasons, events, builds, and Battle Royale updates.</p>
+            </div>
+        </a>
+
+        <a href="console-forum.html" class="card forum-card">
+            <img src="img/ps.png" alt="Console gaming forum">
+            <div class="card-content">
+                <h3>Console Gaming Forum</h3>
+                <p>Discuss PlayStation, Xbox, Nintendo, PC gaming, and accessories.</p>
+            </div>
+        </a>
+    </div>
+
+    <br><br>
+
+    <h2 class="section-title">Create Your Own Forum Topic</h2>
+
+    <form onsubmit="createForumPost(); return false;">
+        <label for="forumTitle">Forum Topic Title</label>
+        <input type="text" id="forumTitle" placeholder="Example: Best Fortnite weapons this season" required>
+
+        <label for="forumCategory">Category</label>
+        <select id="forumCategory">
+            <option>Call of Duty</option>
+            <option>Fortnite</option>
+            <option>Console Gaming</option>
+            <option>General Gaming</option>
+            <option>Gaming Hardware</option>
+        </select>
+
+        <label for="forumMessage">Topic Description</label>
+        <textarea id="forumMessage" placeholder="Write what you want to discuss..." required></textarea>
+
+        <button type="submit">Create Forum Topic</button>
+    </form>
+
+    <br><br>
+
+    <h2 class="section-title">Community Created Topics</h2>
+
+    <div id="createdTopics" class="forum-list">
+        <div class="forum-topic">
+            <div>
+                <h3>Best Call of Duty Loadouts</h3>
+                <p>Share your favorite weapons and setups.</p>
+            </div>
+            <span class="badge">Shooter</span>
+        </div>
+
+        <div class="forum-topic">
+            <div>
+                <h3>Fortnite Chapter Updates</h3>
+                <p>Discuss skins, maps, and events.</p>
+            </div>
+            <span class="badge">Battle Royale</span>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2026 Pixel Realm. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
